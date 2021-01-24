@@ -1,3 +1,4 @@
+/*  Formatted CV using C */
 #include <stdio.h>
 #include<stdlib.h>
 #include<ctype.h>
@@ -68,7 +69,7 @@ int main()
         }
         printf("Enter your gender: \n");
         scanf("%s",gender);
-        fprintf(fptr,"Qualification \n");
+        fprintf(fptr,"\nQualification \n\n");
         if(age>=15)
         {
             char grade[5];
@@ -76,8 +77,9 @@ int main()
             printf("Enter your Matric grade(10th class): \n");
             scanf("%s",grade);
             printf("Enter year of passing: \n");
-            scanf("%s",yearofpassing);
-            fprintf(fptr,"Matric : with %s grade in %d\n",grade,yearofpassing);
+            scanf("%d",&yearofpassing);
+            fprintf(fptr,"Matric : with %s grade \t",grade);
+            fprintf(fptr,"in %d\n\n",yearofpassing);
         }
         if(age>=17&&age<=21)
         {
@@ -86,8 +88,9 @@ int main()
             printf("Enter your Intermediate(12th) grade: \n");
             scanf("%s",grade);
             printf("Enter year of passing: \n");
-            scanf("%s",yearofpassing);
-            fprintf(fptr,"Intermediate : with %s grade in %s\n",grade,yearofpassing);
+            scanf("%d",&yearofpassing);
+            fprintf(fptr,"Intermediate : with %s grade \t",grade);
+            fprintf(fptr,"in %d\n\n",yearofpassing);
         }
     
         
