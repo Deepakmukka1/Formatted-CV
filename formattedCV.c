@@ -16,7 +16,7 @@ int chcknum(const char *phonenum)
 int main()
 {
     FILE *fptr;
-    fptr=fopen("new.txt","w");
+    fptr=fopen("newCV.txt","w");
     if(fptr==NULL)
     {
         printf("Error");
@@ -107,7 +107,6 @@ int main()
         fprintf(fptr,"\t %s\n\n",skills);
         fprintf(fptr,"Last Job title \n\n");
         fprintf(fptr,"\t %s\n\n",jobtitle);
-        rename("new.txt",name);
         fclose(fptr);
     }
     
