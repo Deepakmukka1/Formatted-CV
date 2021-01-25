@@ -107,9 +107,7 @@ int main()
         fprintf(fptr,"\t %s\n\n",skills);
         fprintf(fptr,"Last Job title \n\n");
         fprintf(fptr,"\t %s\n\n",jobtitle);
-        
-    
-        
+        rename("new.txt",name);
         fclose(fptr);
     }
     
