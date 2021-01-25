@@ -25,7 +25,7 @@ int main()
     else
     {
         char name[15],email[50],phone[12];
-        char symbol,gender[10];
+        char symbol,gender[10],skills[300],jobtitle[50];
         int age,qualification;
         char address[60];
         int i=0,j=0;
@@ -78,7 +78,7 @@ int main()
             scanf("%s",grade);
             printf("Enter year of passing: \n");
             scanf("%d",&yearofpassing);
-            fprintf(fptr,"Matric : with %s grade \t",grade);
+            fprintf(fptr,"\t Matric : with %s grade ",grade);
             fprintf(fptr,"in %d\n\n",yearofpassing);
         }
         if(age>=17&&age<=21)
@@ -89,9 +89,25 @@ int main()
             scanf("%s",grade);
             printf("Enter year of passing: \n");
             scanf("%d",&yearofpassing);
-            fprintf(fptr,"Intermediate : with %s grade \t",grade);
+            printf("Enter your Bachelors Degree grade(last semester) : \n");
+            scanf("%s",grade1);
+            printf("Enter year of completion: \n");
+            scanf("%d",&yearofpassing1);
+            fprintf(fptr,"\t Intermediate : with %s grade ",grade);
             fprintf(fptr,"in %d\n\n",yearofpassing);
+            fprintf(fptr,"\t Bachelors : with %s grade\n",grade);
+            fprintf(fptr,"\t Year of completion : %d\n\n",yearofpassing1);
+            
         }
+        printf("Enter your experience in your current field and mention your skills (3-4 lines) :\n");
+        scanf(" %[^\n]s", skills);
+        printf("Enter your last job title (use NA if not applicable ) :\n");
+        scanf(" %[^\n]s", jobtitle);
+        fprintf(fptr,"Experience \n\n");
+        fprintf(fptr,"\t %s\n\n",skills);
+        fprintf(fptr,"Last Job title \n\n");
+        fprintf(fptr,"\t %s\n\n",jobtitle);
+        
     
         
         fclose(fptr);
