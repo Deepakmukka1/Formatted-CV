@@ -95,7 +95,7 @@ int main()
             scanf("%d",&yearofpassing1);
             fprintf(fptr,"\t Intermediate : with %s grade ",grade);
             fprintf(fptr,"in %d\n\n",yearofpassing);
-            fprintf(fptr,"\t Bachelors : with %s grade\n",grade);
+            fprintf(fptr,"\t Bachelors : with %s grade\n",grade1);
             fprintf(fptr,"\t Year of completion : %d\n\n",yearofpassing1);
             
         }
